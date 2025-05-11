@@ -1,4 +1,5 @@
 
+
 import random
 import time
 
@@ -42,4 +43,4 @@ for num_clauze in [10, 100, 1000]:
     start = time.time()
     rezultat = rezolutie(formula)
     durata = time.time() - start
-    print(f"Rezolutie - {'Satisfiabilă' if rezultat else 'Nesatisfiabilă'} în {durata:.4f} secunde.")
+    print(f"Rezolutie - {'Satisfiabilă' if rezultat else 'Nesatisfiabilă'} în {durata:.6f} secunde.")
