@@ -103,8 +103,6 @@ def cdcl(formula, num_vars):
         reason_clauses[var] = None  # decizie, nu implicare
         implication_graph[var] = []
 
-# --- Testare ---
-
 for num_clauze in [10, 100, 1000]:
     formula = genereaza_formula(num_clauze)
     num_vars = max(abs(lit) for clause in formula for lit in clause)
